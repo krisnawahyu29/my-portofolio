@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse-opacity {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse-opacity 2s infinite;
+}
+
+.dark {
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
